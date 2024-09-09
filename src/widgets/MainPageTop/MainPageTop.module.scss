@@ -1,0 +1,26 @@
+.wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.daily-button {
+  &:global.MuiButton-root {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: rgba(242, 91, 36, .2);
+    min-height: 0;
+    padding: 8px 16px;
+    height: auto;
+  }
+}

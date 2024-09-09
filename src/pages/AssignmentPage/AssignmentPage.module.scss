@@ -1,0 +1,10 @@
+.wrapper {
+  padding: 28px 20px 50px;
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  background: rgba(19, 15, 38, 1);
+}

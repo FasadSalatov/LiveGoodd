@@ -1,0 +1,17 @@
+.wrapper {
+  padding-top: 28px;
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.background-ton-coins {
+  z-index: -1;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  object-fit: contain;
+}

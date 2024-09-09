@@ -1,0 +1,29 @@
+.wrapper {
+  width: 270px;
+  padding: 28px 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border-radius: 32px;
+  background: rgba(19, 15, 38, 1);
+  border-top: 6px solid rgba(255, 255, 255, .05);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  &:global.MuiTypography-root {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+
+    > span {
+      font-weight: 700;
+    }
+  }
+}

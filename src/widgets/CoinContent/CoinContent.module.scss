@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.top {
+  width: 100%;
+  padding: 16px;
+  background: var(--background);
+  border-radius: 24px;
+  border-bottom: 4px solid rgba(255, 255, 255, .04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 30vh;
+}
+
+.coin-button {
+  &:global.MuiButton-root {
+    min-height: 0;
+    height: 30vh;
+    padding: 15px;
+    background: transparent;
+    border-radius: 50%;
+    width: 30vh;
+
+    > svg {
+      height: 26vh;
+      width: 30vh;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 100px 0 rgba(242, 198, 111, 0.2);
+      -moz-box-shadow: 0 0 100px 0 rgba(242, 198, 111, 0.2);
+      box-shadow: 0 0 100px 0 rgba(242, 198, 111, 0.2);
+    }
+  }
+
+  &.disabled-button {
+    &:global.MuiButton-root {
+      pointer-events: none;
+      opacity: 30%;
+    }
+  }
+}

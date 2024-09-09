@@ -1,0 +1,27 @@
+.wrapper {
+  flex-grow: 1;
+  padding: 20px 20px 50px;
+  background: #130F26;
+  border-top: 6px solid rgba(255, 255, 255, .05);
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+
+  &.matrix-variant {
+    gap: 20px;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bottom {
+  padding: 16px;
+  background: rgba(15, 12, 29, 1);
+  border-radius: 24px;
+  width: 100%;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.05);
+}

@@ -1,0 +1,11 @@
+.wrapper {
+  border-radius: 50%;
+
+  &.empty-image {
+    background: rgba(15, 12, 29, 1);
+  }
+
+  &.outlined {
+    border: 1px solid #F25B24;
+  }
+}

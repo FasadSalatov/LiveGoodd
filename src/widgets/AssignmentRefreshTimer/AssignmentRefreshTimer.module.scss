@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+  padding: 16px;
+  border-radius: 24px;
+  background: rgba(15, 12, 29, 1);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  &:global.MuiTypography-root {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.timer-wrapper {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(19, 15, 38, 1);
+  border-radius: 16px;
+}
+
+.timer-text {
+  &:global.MuiTypography-root {
+    color: var(--primary);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+}

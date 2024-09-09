@@ -1,0 +1,21 @@
+.wrapper {
+  padding-top: 12px;
+  flex-grow: 1;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Разделяет элементы по вертикали */
+  gap: 5px; /* Отступы между элементами */
+  min-height: 100vh; /* Гарантирует, что контейнер растягивается на всю высоту экрана */
+  overflow: hidden; /* Убирает прокрутку внутри .wrapper */
+}
+
+.background-ton-coins {
+  z-index: -1; 
+  position: absolute;
+  top: -50px;
+  right: 0;
+  object-fit: contain; /* Содержимое изображения не растягивается за рамки */
+  width: 100%; /* Изображение занимает всю ширину */
+  max-height: calc(100% + 50px); /* Высота изображения адаптируется с учетом сдвига */
+}
