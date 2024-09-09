@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  &:global.MuiTypography-root {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+  }
+}
+
+.amount {
+  &:global.MuiTypography-root {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+}

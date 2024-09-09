@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'reset';
+@import './vars/global';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Убираем прокрутку для всей страницы */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: #fff;
+  font: var(--font-m);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: #fff;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Гибкое распределение контента */
+  min-height: 0; /* Позволяет сжиматься, если необходимо */
+  overflow: hidden;
+}
+
+.header, .footer {
+  flex-shrink: 0; /* Эти элементы не будут сжиматься */
+}
+
+.main-content {
+  flex-grow: 1;
+  flex-shrink: 1; /* Этот элемент будет сжиматься при необходимости */
+  overflow-y: auto; /* Прокрутка внутри этого элемента, если контент превышает его высоту */
+  min-height: 0; /* Позволяет сжиматься, если необходимо */
+}

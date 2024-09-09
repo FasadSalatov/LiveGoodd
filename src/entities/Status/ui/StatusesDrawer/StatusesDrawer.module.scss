@@ -1,0 +1,24 @@
+.wrapper {
+  &:global.MuiDrawer-root {
+    & > .MuiPaper-root {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.title {
+  &:global.MuiTypography-root {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+}

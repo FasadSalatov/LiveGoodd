@@ -1,0 +1,88 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+
+  &.left-side {
+    align-items: flex-end;
+  }
+
+  &.right-side {
+    align-items: flex-start;
+  }
+}
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  cursor: pointer;
+
+  &.last-depth {
+    &:before, &:after {
+      display: none;
+    }
+  }
+
+  &.second-depth {
+    &:after {
+      height: 36px;
+      top: 100%;
+      right: 30%;
+      transform: rotate(-40deg);
+    }
+
+    &:before {
+      height: 36px;
+      top: 100%;
+      left: 30%;
+      transform: rotate(40deg);
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    width: 1px;
+    height: 55px;
+    background: rgba(255, 255, 255, .2);
+    position: absolute;
+  }
+
+  &:after {
+    top: 90%;
+    right: 20%;
+    transform: rotate(-60deg);
+  }
+
+  &:before {
+    top: 90%;
+    left: 20%;
+    transform: rotate(60deg);
+  }
+}
+
+.username {
+  &:global.MuiTypography-root {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+}
+
+.next-dept {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &.last-depth {
+    gap: 12px;
+  }
+}

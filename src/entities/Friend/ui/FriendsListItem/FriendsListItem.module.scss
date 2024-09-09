@@ -1,0 +1,60 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.username {
+  &:global.MuiTypography-root {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+  }
+}
+
+.friends-count-label {
+  &:global.MuiTypography-root {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .4);
+  }
+}
+
+.lg-coins {
+  &:global.MuiTypography-root {
+    color: var(--primary);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    > span {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
